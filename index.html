@@ -1,0 +1,270 @@
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bootstrap Project</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sunset</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div>
+      <img
+        class="img-fluid"
+        src="images/banner.png"
+        alt="Oceanic Breeze Hotel and Resort"
+      />
+    </div>
+    <!-- WELCOME -->
+    <h1 class="text-center p-1">Welcome to where elegance meets comfort</h1>
+    <p class="text-center fs-5">The perfect place for gateaways</p>
+    <p class="text-center fs-5">You are now one step closer to paradise</p>
+
+    <!-- CARDS -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3 g-5 m-3 pt-5">
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <img
+              src="images/bed.jpeg"
+              class="card-img-top"
+              alt="Hotel bedrooms for rest"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rest</h5>
+              <p class="card-text fs-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sapiente, blanditiis. Mollitia, ab? Dolore tempora optio
+                corrupti veritatis, similique quae temporibus expedita quod
+                saepe omnis, quaerat numquam nemo et obcaecati distinctio!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <img
+              src="images/breakfast.jpeg"
+              class="card-img-top"
+              alt="complimentary breakfast"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eat</h5>
+              <p class="card-text fs-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam ipsum accusamus itaque dignissimos excepturi minus
+                laudantium perspiciatis, amet dolores blanditiis quod magnam et
+                illum nesciunt, delectus ad quaerat deleniti inventore.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-lg">
+            <img
+              src="images/beach-cabanas.jpg"
+              class="card-img-top"
+              alt="Lounge next to the ocean"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Explore</h5>
+              <p class="card-text fs-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                natus, voluptatibus amet obcaecati molestiae odit consequatur,
+                similique in voluptatem, enim debitis esse cumque molestias nisi
+                illum tempora pariatur? Maxime, sed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PICTURE DIV -->
+    <div class="container mb-5 pt-5 pb-5 text-center">
+      <div class="row gx-0">
+        <div class="col-sm-12">Lounge by the pool or visit the spa</div>
+      </div>
+
+      <div class="row gx-0">
+        <div class="col-sm-8">
+          <img
+            class="img-fluid"
+            src="images/poolside.png"
+            alt="Poolside at Oceanic Hotel"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            class="img-fluid"
+            src="images/spa.png"
+            alt="Visit the Oceana Spa"
+          />
+        </div>
+      </div>
+
+      <div class="row gx-0">
+        <div class="col-sm-4">
+          <img
+            class="img-fluid"
+            src="images/coconut.png"
+            alt="Enjoy fresh fruit by the pool"
+          />
+        </div>
+        <div class="col-sm-8">
+          <img
+            class="img-fluid"
+            src="images/pool.png"
+            alt="Drinks by the pool"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- IMG VIEW ALL LOCATIONS -->
+    <div class="container mt-5 pt-5">
+      <div class="card text-bg-dark">
+        <img
+          src="images/hotel-1.png"
+          class="card-img img-fluid"
+          alt="see all of our locations"
+          width="400"
+        />
+        <div class="card-img-overlay">
+          <h5 class="card-title">View All Locations</h5>
+          <p class="card-text fs-5">Rest and relax all over the world</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <h1 class="text-center mt-5 pt-5">Contact Us</h1>
+    <h2 class="text-center mb-4">
+      Get more information about staying at the Oceanic!
+    </h2>
+    <div class="container">
+      <form class="row g-3 mb-5 ms-3 me-3 pt-5">
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="First name"
+            id="firstname"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Last name"
+            id="lastname"
+          />
+        </div>
+        <div class="col-md-12">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <div class="text-center p-2">
+      <h5>Oceanic Hotel & Resort International copyrighted 2024</h5>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
